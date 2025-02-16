@@ -1,0 +1,937 @@
+package decryption;
+import java.util.*;
+public class Decryption {
+public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+      // read the ciphertext from the user
+      System.out.println("enter your ciphertext");
+      String ciphertext = input.nextLine();
+      //-------------------------------------------------------
+      
+      
+      // read key values from the user
+      System.out.println("enter 3 keys");
+      int num1 = input.nextInt();
+            int num2 = input.nextInt();
+                  int num3 = input.nextInt();
+                  //-----------------------------------
+                  
+                  
+                  // while loop for minimum size 
+                  while(String.valueOf(num1).length()!=8 && String.valueOf(num2).length()!=8 && String.valueOf(num3).length()!=8){
+         System.out.println("invalid key length");
+     num1 = input.nextInt();
+            num2 = input.nextInt();
+                  num3 = input.nextInt();
+                  }
+             //-------------------------------------------------
+             
+             
+             // variables declaration
+                   int aCount=0;
+    int bCount=0;
+    int cCount=0;
+    int dCount=0;
+    int eCount=0;
+    int fCount=0;
+    int gCount=0;
+    int hCount=0;
+    int iCount=0;
+    int jCount=0;
+    int kCount=0;
+    int lCount=0;
+    int mCount=0;
+    int nCount=0;
+    int oCount=0;
+    int pCount=0;
+    int qCount=0;
+    int rCount=0;
+    int sCount=0;
+    int tCount=0;
+    int uCount=0;
+    int vCount=0;
+    int wCount=0;
+    int xCount=0;
+    int yCount=0;
+    int zCount=0;
+    int[] numbers = new int[4];
+    int first = 0;
+    int second = 0;
+    int third = 0;
+    int fourth = 0;
+    int count=0;
+    int translate;
+    int result;
+    String resultstr;
+    int finalvalue;
+    int spacecount=0;
+    //------------------------------------------
+
+
+// read the ciphertext and decrypt it
+ for(int i=0;i<ciphertext.length();i++){
+    
+     if (count == 0) {
+                first = Character.getNumericValue(ciphertext.charAt(i));
+                count++;
+                 numbers[0] = first;
+            } else if (count == 1) {
+                second = Character.getNumericValue(ciphertext.charAt(i));
+                count++;
+                numbers[1] =second;
+            } else if (count == 2) {
+                third = Character.getNumericValue(ciphertext.charAt(i));
+                count++;
+                numbers[2] = third;
+            } else if (count == 3) {
+                fourth = Character.getNumericValue(ciphertext.charAt(i));
+                count = 0; // Reset count after four digits
+                numbers[3] = fourth;
+                translate = numbers[0] * 1000 + numbers[1] * 100 + numbers[2] * 10 + numbers[3];
+                //-----------------------------------------------------------------------------------------------------------------
+                
+                
+                 //--------------------------------------------------------------------------------------------- START SPACE
+              result = Math.abs(num1 * 20 + spacecount + num3 + 20 + spacecount + num3*245965380);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print(" ");
+                   }//space letter brackets
+                   if(spacecount>=1){
+                       
+                       result = Math.abs(num1 + 20 + spacecount +num3*847* num2 + 20 + spacecount + num3 * 424710838);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print(" ");
+              
+                }
+                       
+                    spacecount++;   
+                   }//else if
+                
+                   }
+spacecount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START A
+              result = Math.abs(num1 + 61 + aCount+4115*num1* num3 + 61 + aCount + num3*97*63896635);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("a");
+                   }//a letter brackets
+                   if(aCount>=1){
+                       
+                       result = Math.abs(num1 + 61 + aCount+num1+aCount+num2*2245 * num2 + 61 + aCount + num3 * 970942*(num1 + 61 + aCount) * (num3 + 61 + aCount) * num3);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("a");
+              
+                }
+                       
+                    aCount++;   
+                   }//else if
+                
+                   }
+aCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START B
+              result = Math.abs(num1 + 62 + bCount +67721* num3 + 62 + bCount+ num3*354601498);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("b");
+                   }//b letter brackets
+                   if(bCount>=1){
+                       
+                       result = Math.abs(num1 +62+ bCount +84734859+num2* num2 + 62 + bCount + num3 * 2000959093);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("b");
+              
+                }
+                       
+                    bCount++;   
+                   }//else if
+                
+                   }
+bCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START C
+              result = Math.abs(num1 + 63 + cCount +num1* num3 + 63 + cCount + num3+95303742);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("c");
+                   }//c letter brackets
+                   if(cCount>=1){
+                       
+                       result =Math.abs(num1 + 63 + cCount + num2 + 63 + cCount + num3 * 137208342);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("c");
+              
+                }
+                       
+                    cCount++;   
+                   }//else if
+                
+                   }
+cCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START D
+              result = Math.abs(num1 + 64 + dCount + num3 + 64 + dCount + num3+304514987);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("d");
+                   }//d letter brackets
+                   if(dCount>=1){
+                       
+                       result = Math.abs(num1 + 64 + dCount+34971 * num2 + 64 + dCount + num3 * 970942);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("d");
+              
+                }
+                       
+                    dCount++;   
+                   }//else if
+                
+                   }
+dCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START E
+              result = Math.abs(num1 + 65 + eCount +65 + eCount + num3+276868143);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("e");
+                   }//e letter brackets
+                   if(eCount>=1){
+                       
+                       result = Math.abs(num1 + 65 + eCount +2715+num3* num2 +65 + eCount + num3 * 831533654);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("e");
+              
+                }
+                       
+                    eCount++;   
+                   }//else if
+                
+                   }
+eCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START F
+              result = Math.abs(num1 + 66 + fCount+num2*num2* num3 +66+ fCount + num3+24837592);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("f");
+                   }//f letter brackets
+                   if(fCount>=1){
+                       
+                       result = Math.abs(num1 + 66 + fCount +669*911* num2 + 66 + fCount + num3 * 271626085);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("f");
+              
+                }
+                       
+                    fCount++;   
+                   }//else if
+                
+                   }
+fCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START G
+              result = Math.abs(num1 + 67 + gCount+16+num3 * num3 + 67+ gCount + 32743952);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("g");
+                   }//g letter brackets
+                   if(gCount>=1){
+                       
+                       result =Math.abs(num1 +67 + gCount+6+num2 * num2 + 67 + gCount + num3 * 57362437);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("g");
+              
+                }
+                       
+                    gCount++;   
+                   }//else if
+                
+                   }
+gCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START H
+              result = Math.abs(num1 +68 + hCount +3* num3 + 68 + hCount + num3*315704341);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("h");
+                   }//h letter brackets
+                   if(hCount>=1){
+                       
+                       result = Math.abs(num1 +68 + hCount+num2+num3+num1 * num2 + 68 + hCount + num3 * 50429883);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("h");
+              
+                }
+                       
+                    hCount++;   
+                   }//else if
+                
+                   }
+hCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START  I
+              result =Math.abs(num1 + 69 + iCount + num3 + 69 + iCount + num3*38025937);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("i");
+                   }//i letter brackets
+                   if(iCount>=1){
+                       
+                       result = Math.abs(num1 + 69 + iCount+num3 * num2*num3 + 69 + iCount + num3 * 174493547);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("i");
+              
+                }
+                       
+                    iCount++;   
+                   }//else if
+                
+                   }
+iCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START J
+              result = Math.abs(num1 + 70 +num2+ jCount+1 * num3 + 70 + jCount + num3*307103658);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("j");
+                   }//j letter brackets
+                   if(jCount>=1){
+                       
+                       result = Math.abs(num1+num3 + 70 + jCount + num2 + 70 + jCount+ num3 * 80821930);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("j");
+              
+                }
+                       
+                    jCount++;   
+                   }//else if
+                
+                   }
+jCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START K
+              result = Math.abs(num1 + 71 + kCount+num2+num3 * num3 + 71+ kCount+ num3*282125849);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("k");
+                   }//k letter brackets
+                   if(kCount>=1){
+                       
+                       result = Math.abs(num1 + 71 + kCount +2+num1* num2 + 71 + kCount+ num3 * 609505738);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("k");
+              
+                }
+                       
+                    kCount++;   
+                   }//else if
+                
+                   }
+kCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START L
+              result =Math.abs(num1 + 72 + 5+lCount +num1* num3 + 72+ lCount + num3*45092598);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("l");
+                   }//l letter brackets
+                   if(lCount>=1){
+                       
+                       result = Math.abs(num1 + 72 + lCount + num2 +72+ lCount+num2*num1 + num3* 43534549);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("l");
+              
+                }
+                       
+                    lCount++;   
+                   }//else if
+                
+                   }
+lCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START M
+              result = Math.abs(num1 + 73 + mCount + num3 + 73+ mCount + num3*271557347);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("m");
+                   }//m letter brackets
+                   if(mCount>=1){
+                       
+                       result = Math.abs(num1 + 73 + mCount+num1*num3* num2 + 73 + mCount + num3 * 892139317);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("m");
+              
+                }
+                       
+                    mCount++;   
+                   }//else if
+                
+                   }
+mCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START N
+              result = Math.abs(num1 + 74 + 1+num1+num3+nCount+ num3 + 74 + nCount + num1+347498976);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("n");
+                   }//n letter brackets
+                   if(nCount>=1){
+                       
+                       result = Math.abs(num1 + 74 + nCount + num2 + 74 + nCount + num3 * 697279952);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("n");
+              
+                }
+                       
+                    nCount++;   
+                   }//else if
+                
+                   }
+nCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START O
+              result =Math.abs(num1 + 75 + oCount + num3 +75 + oCount + num3*49855849);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("o");
+                   }//o letter brackets
+                   if(oCount>=1){
+                       
+                       result = Math.abs(num1 + 75 + oCount + num2 + 75 + oCount +num1+ num3 * 47180872);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("o");
+              
+                }
+                       
+                    oCount++;   
+                   }//else if
+                
+                   }
+oCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START P
+              result = Math.abs(num1 + 76 + pCount + num3 +num3+ 76 + pCount + num3*51731092);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("p");
+                   }//p letter brackets
+                   if(pCount>=1){
+                       
+                       result = Math.abs(num1 + 76 + pCount + num2 + 76 + pCount + num3 * 19733540);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("p");
+              
+                }
+                       
+                    pCount++;   
+                   }//else if
+                
+                   }
+pCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START Q
+              result =Math.abs(num1 + 77 + qCount+num1*2* num3 +77 + qCount + num3*2910034);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("q");
+                   }//q letter brackets
+                   if(qCount>=1){
+                       
+                       result = Math.abs(num1 + 77 + qCount +num3* num2 +77 + qCount + num3 * 573737188);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("q");
+              
+                }
+                       
+                    qCount++;   
+                   }//else if
+                
+                   }
+qCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START R
+              result =Math.abs(num1 + 78 + rCount + num3 + 78 + rCount + num3 *202151810);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("r");
+                   }//r letter brackets
+                   if(rCount>=1){
+                       
+                       result = Math.abs(num1 +78 + rCount+num2 * num2 + 78 + rCount + num3 * 495471220);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("r");
+              
+                }
+                       
+                    rCount++;   
+                   }//else if
+                
+                   }
+rCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START S
+              result = Math.abs(num1 + 79 + sCount + num3 + 79 + sCount+num3+ num3*39055);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("s");
+                   }//s letter brackets
+                   if(sCount>=1){
+                       
+                       result = Math.abs(num1 +79 + sCount + num2 + 79 + sCount + num3 + 37970);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("s");
+              
+                }
+                       
+                    sCount++;   
+                   }//else if
+                
+                   }
+sCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START T
+              result = Math.abs(num1 +80 + tCount+num2 * num3 + 80 + tCount + num3*75939);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("t");
+                   }//t letter brackets
+                   if(tCount>=1){
+                       
+                       result = Math.abs(num1 + 80+num2 + tCount + num2 + 80 + tCount + num3 * 12989);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("t");
+              
+                }
+                       
+                    tCount++;   
+                   }//else if
+                
+                   }
+tCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START U
+              result = Math.abs(num1 + 81+num1*3 + uCount +num3 + 81 + uCount + num3*81783184);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("u");
+                   }//u letter brackets
+                   if(uCount>=1){
+                       
+                       result = Math.abs(num1*num3+num2 + 81 + uCount+ num2 +81 + uCount + num3* 970942);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("u");
+              
+                }
+                       
+                    uCount++;   
+                   }//else if
+                
+                   }
+uCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START V
+              result = Math.abs(num1 + 82 +num3+ vCount+ num3 + 82 + vCount + num3*87962);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("v");
+                   }//v letter brackets
+                   if(vCount>=1){
+                       
+                       result =Math.abs(num2+num1 +82 + vCount* num2 + 82 + vCount + num3 * 17892);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("v");
+              
+                }
+                       
+                    vCount++;   
+                   }//else if
+                
+                   }
+vCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START W
+              result =Math.abs(num3+num1+3 + 83 + wCount+num3 *num3 + 83 + wCount + num3*13356);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("w");
+                   }//w letter brackets
+                   if(wCount>=1){
+                       
+                       result = Math.abs(num1 + 83 + wCount+num3 * num2 + 83 + wCount + num1 * 123866385);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("w");
+              
+                }
+                       
+                    wCount++;   
+                   }//else if
+                
+                   }
+wCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START X
+              result = Math.abs(num2 + 84 + xCount + num2+ 87993454 + xCount + num2*112085);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("x");
+                   }//x letter brackets
+                   if(xCount>=1){
+                       
+                       result = Math.abs(num3 +num3+84 + xCount + num2 + 8334354 + xCount + num3 * 8019103);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("x");
+              
+                }
+                       
+                    xCount++;   
+                   }//else if
+                
+                   }
+xCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START Y
+              result = Math.abs(num3 +85 + yCount + num3 + 85 + yCount+ num3*168054);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("y");
+                   }//y letter brackets
+                   if(yCount>=1){
+                       
+                       result = Math.abs(num2 +85 + yCount + num2 +85 + yCount + num3* 103232075);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("y");
+              
+                }
+                       
+                    yCount++;   
+                   }//else if
+                
+                   }
+yCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                 //--------------------------------------------------------------------------------------------- START Z
+              result = Math.abs(num1 *num3 *86 + zCount +num3 + 86 + zCount+ num3*1218300);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("z");
+                   }//a letter brackets
+                   if(zCount>=1){
+                       
+                       result = Math.abs(num1 + 86 + zCount + num1 + 86 + zCount + num2 * 675000);
+             resultstr = String.valueOf(result);
+                if (resultstr.length() > 4) {
+              resultstr = resultstr.substring(0, 4);
+              finalvalue = Integer.parseInt(resultstr);
+                   if (translate == finalvalue){
+                System.out.print("z");
+              
+                }
+                       
+                    zCount++;   
+                   }//else if
+                
+                   }
+zCount++;
+                } //4 digits brackets
+                
+                //---------------------------------------------------------------- FINISH
+                
+                
+                
+               
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+              
+                
+            
+            
+            
+            }//count3 brackets
+         //---------------------------------------------------------------------------------------------------------------------------------
+         
+
+           
+
+    
+  
+
+    
+  
+     
+    //outer brackets
+     }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+    
+
