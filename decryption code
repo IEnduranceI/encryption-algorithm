@@ -18,12 +18,12 @@ public static void main(String[] args) {
                   
                   
                   // while loop for minimum size 
-                  while(String.valueOf(num1).length()!=8 && String.valueOf(num2).length()!=8 && String.valueOf(num3).length()!=8){
+                  /*while(String.valueOf(num1).length()!=8 || String.valueOf(num2).length()!=8 || String.valueOf(num3).length()!=8){
          System.out.println("invalid key length");
      num1 = input.nextInt();
             num2 = input.nextInt();
                   num3 = input.nextInt();
-                  }
+                  }*/
              //-------------------------------------------------
              
              
